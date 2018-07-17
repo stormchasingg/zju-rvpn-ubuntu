@@ -41,3 +41,50 @@ Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
 Java HotSpot(TM) 64-Bit Server VM (build 20.2-b06, mixed mode)  
 # 可以重启一下  
 ```
+
+## 安装旧版 firefox/chrome 浏览器(以firefox为例)
+因为高版本的这两种浏览器已经不支持java插件，所以需要安装旧版本的浏览器  
+```Bash
+# ubuntu16.04默认安装了高版本的firefox浏览器，先卸载  
+sudo apt-get remove firefox  
+```
+下载旧版本: http://ftp.mozilla.org/pub/firefox/releases/31.0/linux-x86_64/zh-CN/  
+这里使用31版本  
+```Bash
+cd ~/下载  
+sudo tar -jxvf firefox-31.0.tar.bz2 # 解压  
+sudo cp -R firefox /opt/  
+```
+
+## 关联插件与浏览器
+```Bash
+# 打开终端  
+sudo mkdir -p /usr/lib/mozilla/plugins/  
+cd /usr/lib/mozilla/plugins/  
+sudo ln -s /usr/local/java/jre1.6.0_27/lib/amd64/libnpjp2.so  
+# 如果 plugins 中有旧的 libnpjp2.so 需要删除  
+```
+
+## 打开浏览器
+```Bash
+cd /opt/firefox  
+sudo ./firefox  
+```
+在首选项中改掉默认主页，关闭更新  
+在网址栏输入 about:plugins 或者打开附加组件，可以看到 java 的一堆插件，证明关联成功  
+访问 https://rvpn.zju.edu.cn 登录，浏览器会运行 java 插件，同意  
+如果成功，会出现一个绿色图标  
+如果卡在初始化界面，请往下看～  
+```Bash
+cd ~/.sangfor/ssl/shell/  
+sudo ./sslservice.sh  
+```
+报错: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory  
+Ctrl + Z 结束任务  
+```Bash
+sudo apt-get install libstdc++6  
+sudo apt-get install lib32stdc++6  
+```
+再次登录，如果还是卡在初始化界面，运行 sslcheck.sh 或者其他几个 .sh 文件  
+再再次登录，成功。上述方法会使CPU被占用，无法杀死进程，万事重启之  
+重启登录就不用运行 .sh 了
