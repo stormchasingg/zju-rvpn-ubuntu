@@ -41,6 +41,8 @@ Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
 Java HotSpot(TM) 64-Bit Server VM (build 20.2-b06, mixed mode)  
 # 可以重启一下  
 ```
+选择2 安装最新版jre  
+待完善  
 
 ## 安装旧版 firefox/chrome 浏览器(以firefox为例)
 因为高版本的这两种浏览器已经不支持java插件，所以需要安装旧版本的浏览器  
@@ -87,4 +89,5 @@ sudo apt-get install lib32stdc++6
 ```
 再次登录，如果还是卡在初始化界面，运行 sslcheck.sh 或者其他几个 .sh 文件  
 再再次登录，成功。上述方法会使CPU被占用，无法杀死进程，万事重启之  
-重启登录就不用运行 .sh 了
+重启登录就不用运行 .sh 了  
+
