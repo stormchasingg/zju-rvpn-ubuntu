@@ -8,8 +8,9 @@
 用邮箱注册一个账号  
 在上述页面找到 Java Archive, 点击 DOWNLOAD, 然后点击 Java SE 6, 找到 Java SE Runtime Environment 6u27, 选择 Accept License Agreement,  点击 jre-6u27-linux-x64.bin, 下载到 ~/Downloads 或者 ~/下载  
 (2)打开终端  
-'''Bash
+```Bash
 cd /usr/local/  
-sudo mkdir java  
-cd ~/下载  
-'''
+sudo mkdir java # 或者 sudo mkdir -p /usr/local/java  
+cd ~/下载  # 或者在下载页面右键打开终端  
+sudo cp -r jre-6u27-linux-x64.bin /usr/local/java  
+```
