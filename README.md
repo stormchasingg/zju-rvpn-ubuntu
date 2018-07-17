@@ -7,3 +7,9 @@
 登录java(oracle) http://www.oracle.com/technetwork/java/javase/downloads/index.html  
 用邮箱注册一个账号  
 在上述页面找到 Java Archive, 点击 DOWNLOAD, 然后点击 Java SE 6, 找到 Java SE Runtime Environment 6u27, 选择 Accept License Agreement,  点击 jre-6u27-linux-x64.bin, 下载到 ~/Downloads 或者 ~/下载  
+(2)打开终端
+'''Bash
+cd /usr/local/  
+sudo mkdir java  
+cd ~/下载  
+'''
