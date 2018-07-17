@@ -91,3 +91,5 @@ sudo apt-get install lib32stdc++6
 再再次登录，成功。上述方法会使CPU被占用，无法杀死进程，万事重启之  
 重启登录就不用运行 .sh 了  
 
+又可以水98了~  
+![](https://github.com/stormchasingg/zju-rvpn-ubuntu/blob/master/1.png)  
