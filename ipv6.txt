@@ -1,3 +1,7 @@
-ipv6 翻墙已实现，部分网站连接速度慢
-ss自建服务器已实现，但是本地ss客户端未能连接远程服务器，原因未知，已搁置
+ipv6 翻墙（win10 & ubuntu16.06）已实现，部分网站连接速度慢
+
+ss自建服务器已实现，（但是本地ss客户端未能连接远程服务器，原因未知，已搁置，括号内容删除）
+google-chrome 浏览器使用 SwitchyOmega 配置代理，ss 翻墙（win10 & ubuntu16.04）已实现
+本地 shadowsocks.json 文件中的 server 不要填写 0.0.0.0，改为远程服务器ip地址
+
 youtube下载视频方法：www.youtube.com -> www.youtube1s.com
