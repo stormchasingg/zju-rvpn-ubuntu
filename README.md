@@ -70,7 +70,7 @@ sudo ln -s /usr/local/java/jre1.6.0_27/lib/amd64/libnpjp2.so
 ## 打开浏览器
 ```Bash
 cd /opt/firefox  
-sudo ./firefox  
+./firefox  
 ```
 在首选项中改掉默认主页，关闭更新  
 在网址栏输入 about:plugins 或者打开附加组件，可以看到 java 的一堆插件，证明关联成功  
