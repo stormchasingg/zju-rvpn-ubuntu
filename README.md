@@ -1,4 +1,4 @@
-# 学校已经更新了ubuntu下的easy-connect包了，不需要这个了
+# 学校已经更新了ubuntu下的easy-connect包，不需要这个了
 # zju-rvpn-ubuntu
 这份文档将帮助你在 ubuntu16.04_64位 上搭建 rvpn 服务，让我们开始吧！
 
